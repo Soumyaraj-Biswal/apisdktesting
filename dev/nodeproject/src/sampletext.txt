@@ -1,0 +1,53 @@
+Schematics Actions Workshop:
+
+
+I am not sure what you are doing with your regex, but to me it does not look valid. If you want to test it out for yourself, try regex101.com
+
+ Where to try- https://test.cloud.ibm.com/schematics/actions
+ Docs - https://cloud.ibm.com/docs/schematics?topic=schematics-action-setup
+
+Examples: 
+	https://github.com/search?q=topic%3Aansible-playbook+org%3ACloud-Schematics&type=Repositories
+    Deploying VSI start, stop and reboot(https://cloud.ibm.com/docs/schematics?topic=schematics-vsi-start-stop)
+    Provisioning LAMP stack(https://cloud.ibm.com/docs/schematics?topic=schematics-provisioning-lamp-stack)
+    Automating the application deployment(https://cloud.ibm.com/docs/schematics?topic=schematics-iks-cluster)
+
+Challenges :
+
+Easy:
+
+1. Run a simple ansible playbook like hello world with schematics action
+   https://github.com/ansible/ansible-tower-samples
+
+2. With inventory:
+	Run a hello world on targeted VSI using inventory
+	Create a schematics workspace with VSI’s. 
+	Create the dynamic/static inventory for schematics actions using the workspace
+	Run the hello world playbook on targeted VSI
+        Doc: https://test.cloud.ibm.com/docs/schematics?topic=schematics-inventories-setup
+3. Use ansible roles to install kubectl on a targeted VSI
+
+Medium:
+
+Run VSI instance actions start/stopPrereq: VSI’s in the IBM Cloud account
+
+https://github.com/Cloud-Schematics/ansible-is-instance-actions
+
+Hard:
+
+Run Lampstack or app deployment on IKS
+Prereq: 
+IKS cluster in Cloud account
+VSI’s to provision the lamp stack
+
+Inventory: Create a schematics workspace with VSI’s infrastructure. Create the dynamic inventory for schematics actions using the workspace
+
+
+Examples:
+https://github.com/Cloud-Schematics/lamp-simple
+https://github.com/Cloud-Schematics/ansible-app-deploy-iks
+
+smulampa@in.ibm.com
+w3.ibm.com
+7893711491
+9966101134
