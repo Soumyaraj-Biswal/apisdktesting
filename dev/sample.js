@@ -12,7 +12,7 @@ const regex = new RegExp('https:\\/\\/\\w*\\.\\w*.*', 'g');
   '});\n'+
   'function apiname() {\n'+
     'fs = require("fs");\n'+
-    'fs.readFile(__dirname + "/../outputdir/node/examples/schematics.v1.test.js" , function (err,data) {\n'+
+    'fs.readFile(__dirname + "/../data/input/schematics.v1.test.js" , function (err,data) {\n'+
     ' if (err) {\n'+
     '     return console.log(err);\n'+
     '   }\n'+
@@ -22,7 +22,7 @@ const regex = new RegExp('https:\\/\\/\\w*\\.\\w*.*', 'g');
 //  'var regex = new RegExp("\s", "g"); \n'+
   '}\n'+
   'apiname();\n';
-  fs.writeFile(__dirname + '/../outputdir/node/examples/apitesttemplate.js', template , function (err,data) {
+  fs.writeFile(__dirname + '/../data/output/node/examples/apitesttemplate.js', template , function (err,data) {
      if (err) {
          return console.log(err);
        }
