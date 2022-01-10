@@ -9,7 +9,7 @@ serviceUrl: "https://schematics.cloud.ibm.com"
 });
 function apiname() {
 fs = require("fs");
-fs.readFile(__dirname + "/../outputdir/node/examples/schematics.v1.test.js" , function (err,data) {
+fs.readFile(__dirname + "/../data/input/schematics.v1.test.js" , function (err,data) {
  if (err) {
      return console.log(err);
    }
