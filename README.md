@@ -12,4 +12,4 @@ The entire web application would be an automation test suites that run the API e
 
 ## High level design architecture
 
-![High level design flow](apisdkdesign.png)
+![High level design flow](../docs/images/apisdkdesign.png)
