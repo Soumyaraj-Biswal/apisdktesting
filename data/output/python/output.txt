@@ -1,0 +1,43 @@
+
+        get_kms_settings
+        
+{
+  "location": "US",
+  "encryption_scheme": "byok",
+  "resource_group": "Default",
+  "primary_crk": {
+    "kms_name": "Key Protect-qc",
+    "key_crn": "crn:v1:bluemix:public:kms:us-south:a/8403a3dfe7aa4e0b9c617ff1e5bfe187:74a57a6a-76b4-4d64-b093-0244694f30ba:key:e0b015d6-53c3-43dc-93bd-6bd6e2027b43",
+    "kms_private_endpoint": "https://private.us-south.kms.cloud.ibm.com",
+    "key_name": "key1"
+  },
+  "secondary_crk": null
+}
+        List KMS
+        
+{
+  "location": "US",
+  "limit": 10,
+  "encryption_scheme": "byok",
+  "resource_group": "",
+  "kms_instances": [
+    {
+      "kms_crn": "crn:v1:bluemix:public:kms:us-south:a/8403a3dfe7aa4e0b9c617ff1e5bfe187:74a57a6a-76b4-4d64-b093-0244694f30ba::",
+      "kms_name": "Key Protect-qc",
+      "keys": [
+        {
+          "name": "k2",
+          "crn": "crn:v1:bluemix:public:kms:us-south:a/8403a3dfe7aa4e0b9c617ff1e5bfe187:74a57a6a-76b4-4d64-b093-0244694f30ba:key:520b14cc-fffc-4ab7-b24d-8c95ef6da894",
+          "error": ""
+        },
+        {
+          "name": "key1",
+          "crn": "crn:v1:bluemix:public:kms:us-south:a/8403a3dfe7aa4e0b9c617ff1e5bfe187:74a57a6a-76b4-4d64-b093-0244694f30ba:key:e0b015d6-53c3-43dc-93bd-6bd6e2027b43",
+          "error": ""
+        }
+      ],
+      "public_endpoint": "https://us-south.kms.cloud.ibm.com",
+      "private_endpoint": "https://private.us-south.kms.cloud.ibm.com"
+    }
+  ]
+}
