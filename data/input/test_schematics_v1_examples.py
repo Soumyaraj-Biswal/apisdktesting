@@ -48,6 +48,7 @@ class TestSchematicsV1Examples():
             # begin-common
 
             schematics_service = SchematicsV1.new_instance(
+                
             )
 
             # end-common

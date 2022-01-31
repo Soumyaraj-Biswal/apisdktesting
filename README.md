@@ -22,6 +22,74 @@ If you create workspace a workspace ID is created, and use the workspace ID as i
 
 The entire web application would be an automation test suites that run the API examples and it should be an covering examples of all languages and returns response.
 
-## High level design architecture
+## Design flow and scope
 
-![High level design flow](/doc/images/apisdkdesign.png)
+![High level design flow](/doc/images/workflow.png)
+
+## Implementation scope
+
+### MVP-1
+1. Snippet Extractor: Extract Python code snippet
+2. Test Generator:  Use a generator-template for Python
+   -  to prepare the input-data (replace the placeholders)
+   - to embed the “request code” 
+   - to prepare the response-data (replace the placeholders)
+   -  to embed the ”response-code”
+   - to validate the response-data
+3. Test Runner: Run the generated test code, and 
+   - publish results in a Git repository 
+   - notify the test outcome in Slack
+
+### MVP-2
+1. Snippet Extractor: Extract Node code snippet
+2. Test Generator:  Use a generator-template for Node
+3. Test Runner: Run the generated test code
+
+### MVP-3
+1. Snippet Extractor: Extract Go code snippet
+2. Test Generator:  Use a generator-template for Go
+3. Test Runner: Run the generated test code
+
+### MVP-4
+1. Snippet Extractor: Extract Java code snippet
+2. Test Generator:  Use a generator-template for Java
+3. Test Runner: Run the generated test code
+
+### MVP-5
+1. Snippet Extractor: Extract code snippet from any Cloud API
+2. Test Generator:  Use a generator-template for any Cloud API
+3. Test Runner: Run the generated test code
+
+## Estimated Time to Delivery
+
+1. MVP-1: February 7th (Soumya raj)
+2. MVP-2: February 7th (Sundeep)
+3. MVP-3: February 21st (asked for resource)
+4. MVP-4: March 8th (asked for resource)
+
+## Demo/review
+
+1. MVP-1: January 28th  (Soumya raj)
+2. MVP-2: February 3rd (Sundeep)
+3. MVP-3: February 10th and March 17th
+4. MVP-4: February 23rd  and March 4th
+5. Project closure: 2022 Q1
+
+## Contact 
+
+Contact the authors of the tool:
+
+- Geetha Sathyamurthy (geetha_sathyamurthy@in.ibm.com)
+- Sundeep Mulampaka (smulampaka@ibm.com)
+- Soumyaraj Biswal (soumyaraj.biswal@.ibm.com)
+
+### Subject Matter Experts
+
+Subject Matter Experts for the tool:
+
+- Srikar Uppadda(srikar.uppada@in.ibm.com)
+- Albee Jhoney (albee.jhoney@in.ibm.com)
+
+### Implementaion, issues and future work
+
+1. [Python](/doc/python.md)
